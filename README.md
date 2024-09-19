@@ -29,8 +29,8 @@ This project is built on [reveal.js](https://revealjs.com/). All reveal.js depen
 To install locally, first install the required dependencies (Poetry and texlive), then clone the repository and navigate to its directory.
 
 ```bash
-git clone https://github.com/ruc-practical-ai/example-reveal-js-presentation.git
-cd example-reveal-js-presentation
+git clone https://github.com/ruc-practical-ai/fall-2024-class-02
+cd fall-2024-class-02
 ```
 
 #### Viewing HTML Pages Directly in a Browser
