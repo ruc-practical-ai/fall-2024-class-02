@@ -20,18 +20,21 @@ Start an http-server.
 bash ../scripts/start_server.sh
 ```
 
-### Dependencies for Local Installation
+### Use via Dev Container
 
-This project is built on [reveal.js](https://revealjs.com/). All reveal.js dependencies are included in the repository. The repository itself is a modified [basic setup](https://revealjs.com/installation/#basic-setup) of reveal.js.
+To use this repository via a Dev Container, be sure you have the Dev Containers extension installed, along with Docker Desktop and WSL 2 (Windows only). Clone the repository, open VS Code in the repository root, and click the button shown in the pop up in the bottom-right corner to open in the Dev Container.
+
+If the popup doesn't show type `Cmd` / `Ctrl` + `Shift` + `P` &rarr; `Reopen in Container` (if the container is already built) or `Cmd` / `Ctrl` + `Shift` + `P` &rarr; `Build and Open in Container` if the container is not yet built.
 
 ### Local Installation
 
-To install locally, first install the required dependencies (Poetry and texlive), then clone the repository and navigate to its directory.
+The dependencies required for local installation can be found in `.devcontainer/Dockerfile` and `.devcontainer/configure_environment.sh`.
 
-```bash
-git clone https://github.com/ruc-practical-ai/fall-2024-class-02
-cd fall-2024-class-02
-```
+For local installation, perform set up and install dependencies in the order they appear in the Dockerfile and the configuration script, starting with the Dockerfile.
+
+Final setup commands can be found in `.devcontainer/post_attach.sh`.
+
+Note that setup will be different depending on the local OS.
 
 #### Viewing HTML Pages Directly in a Browser
 
